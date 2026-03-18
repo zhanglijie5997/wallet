@@ -1,8 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:reown_appkit/reown_appkit.dart';
 import 'package:dash_chat_2/dash_chat_2.dart';
-import 'package:wallet_project/chat.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -12,7 +9,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  late ReownAppKitModal _appKitModal;
 
   ChatUser user = ChatUser(id: '1', firstName: 'Charles', lastName: 'Leclerc');
 
@@ -24,23 +20,7 @@ class _HomeState extends State<Home> {
   void initState() {
     _loadItems();
     super.initState();
-    _appKitModal = ReownAppKitModal(
-      context: context,
-      projectId: '417864fbc830f0a52d6fc2e90af12491',
-      metadata: const PairingMetadata(
-        name: 'Example App',
-        description: 'Example app description',
-        url: 'https://reown.com/',
-        icons: ['https://reown.com/logo.png'],
-        redirect: Redirect(
-          native: 'exampleapp://',
-          universal: 'https://reown.com/exampleapp',
-        ),
-      ),
-    );
-    _appKitModal.addListener(listener);
-    _appKitModal.init().then((value) => setState(() {}));
-  }
+   }
 
   listener() {}
 
