@@ -1,0 +1,8 @@
+{
+  "dart.flutterSdkPath": ".fvm/versions/3.38.5",
+   "java.configuration.updateBuildConfiguration": "interactive",
+  // 禁用搜索全局 SDK，强制使用项目本地 FVM SDK
+  "dart.sdkPath": ".fvm/flutter_sdk/bin/cache/dart-sdk",
+  "fvm.flutterSdkPath": ".fvm/flutter_sdk",
+  "liveServer.settings.port": 5501
+}
